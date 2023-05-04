@@ -1,0 +1,23 @@
+/* Блок Чего мы там не видели*/
+
+.statistics {
+    padding: 92px 148px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .statistics {
+        padding: 92px 48px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statistics {
+        padding: 88px 24px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .statistics {
+        padding: 64px 16px 0;
+    }
+}

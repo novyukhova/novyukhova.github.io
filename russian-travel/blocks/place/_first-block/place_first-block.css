@@ -1,0 +1,21 @@
+.place_first-block {
+    padding-top: 91px;
+}
+
+@media screen and (max-width: 1200px) {
+    .place_first-block {
+        padding-top: 92px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .place_first-block {
+        padding-top: 88px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .place_first-block {
+        padding-top: 64px;
+    }
+}

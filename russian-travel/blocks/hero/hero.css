@@ -1,0 +1,20 @@
+/* Блок визуала с заголовком */
+
+.hero {
+    margin: auto;
+    padding-top: 56px;
+    width: calc(100vw - 2*148px);
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding-top: 48px;
+        width: calc(100vw - 2*48px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100vw;
+    }
+}

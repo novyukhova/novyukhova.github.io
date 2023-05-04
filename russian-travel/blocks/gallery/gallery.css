@@ -1,0 +1,36 @@
+/* Блок Галерея*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 284px));
+    grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+    gap: 16px;
+    justify-content: center;
+    padding: 92px 48px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, minmax(min-content, 300px));
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(min-content, 352px));
+        gap: 16px;
+        padding: 88px 24px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gallery {
+        grid-template-columns: repeat(1, minmax(min-content, 288px));
+        gap: 12px;
+        padding: 64px 16px 0;
+    }
+}

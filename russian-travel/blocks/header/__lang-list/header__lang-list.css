@@ -1,0 +1,17 @@
+.header__lang-list {
+    margin: 0;
+    padding: calc(46px - 28px) 0 0;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+}
+
+@media screen and (max-width: 425px) {
+    .header__lang-list {
+        padding: calc(30px - 16px) 0 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

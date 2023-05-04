@@ -1,0 +1,17 @@
+/* Блок на собаках */
+
+.cover {
+    margin: 92px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        margin: 90px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cover {
+        margin: 66px 0 0;
+    }
+}
