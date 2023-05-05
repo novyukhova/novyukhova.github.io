@@ -11,7 +11,7 @@
     color: #FFFFFF;
     margin: auto;
     width: calc(100vw - 2*48px);
-    min-height: calc((100vw - 2*48px) * (740/1184));
+    min-height: calc((min(100vw, 1280px) - 2*48px) * (740/1184));
     /* рассчитываем высоту от ширины отображаемой картинки */
     background-position: center;
     max-width: 1184px;
