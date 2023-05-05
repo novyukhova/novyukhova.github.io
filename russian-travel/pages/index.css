@@ -5,10 +5,13 @@
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/header/__lang-list/header__lang-list.css);
 @import url(../blocks/header/__lang-item/header__lang-item.css);
-@import url(../blocks/header/__lang-item/_active/header__lang-item_active.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_active/header__lang-link_active.css);
+@import url(../blocks/link/link.css);
 @import url(../blocks/hero/hero.css);
 @import url(../blocks/hero/__title/hero__title.css);
 @import url(../blocks/hero/__subtitle/hero__subtitle.css);
+@import url(../blocks/hero/__image-area/hero__image-area.css);
 @import url(../blocks/hero/__image/hero__image.css);
 @import url(../blocks/hero/__image-description/hero__image-description.css);
 @import url(../blocks/statistics/statistics.css);
@@ -16,11 +19,10 @@
 @import url(../blocks/statistics/__paragraph/statistics__paragraph.css);
 @import url(../blocks/statistics/__data-list/statistics__data-list.css);
 @import url(../blocks/statistics/__data/statistics__data.css);
-@import url(../blocks/statistics/__data/_span/statistics__data_span.css);
+@import url(../blocks/statistics/__data-name/statistics__data-name.css);
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__picture/gallery__picture.css);
 @import url(../blocks/place/place.css);
-@import url(../blocks/place/_first-block/place_first-block.css);
 @import url(../blocks/place/__title/place__title.css);
 @import url(../blocks/place/__link-area/place__link-area.css);
 @import url(../blocks/place/__url/place__url.css);

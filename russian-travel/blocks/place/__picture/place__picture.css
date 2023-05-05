@@ -1,9 +1,3 @@
 .place__picture {
     max-width: 100%;
 }
-
-@media screen and (max-width: 560px) {
-    .place__picture {
-        max-width: 100vw;
-    }
-}

@@ -11,8 +11,10 @@
     color: #FFFFFF;
     margin: auto;
     width: calc(100vw - 2*48px);
-    height: calc((100vw - 2*48px) * (740/1184));
+    min-height: calc((100vw - 2*48px) * (740/1184));
     /* рассчитываем высоту от ширины отображаемой картинки */
+    background-position: center;
+    max-width: 1184px;
 }
 
 .cover__link::before {
@@ -24,6 +26,7 @@
     height: 100%;
     background-color: #2A2C2F;
     opacity: 0.3;
+    transition: opacity .7s;
 }
 
 .cover__link:hover::before {
@@ -32,7 +35,7 @@
 
 @media screen and (max-width: 1024px) {
     .cover__link {
-        width: 100vw;
-        height: calc(100vw * (740/1184));
+        width: 100%;
+        min-height: calc(100vw * (740/1184));
     }
 }

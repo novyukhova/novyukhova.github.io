@@ -1,7 +1,9 @@
 /* Блок Чего мы там не видели*/
 
 .statistics {
-    padding: 92px 148px 0;
+    padding-top: 92px;
+    margin: 0 auto;
+    max-width: 984px;
 }
 
 @media screen and (max-width: 1024px) {

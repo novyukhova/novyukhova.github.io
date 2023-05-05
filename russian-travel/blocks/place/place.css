@@ -37,3 +37,25 @@
         padding: 50px 0 0;
     }
 }
+
+.place:first-child {
+    padding-top: 91px;
+}
+
+@media screen and (max-width: 1200px) {
+    .place:first-child {
+        padding-top: 92px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .place:first-child {
+        padding-top: 88px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .place:first-child {
+        padding-top: 64px;
+    }
+}
