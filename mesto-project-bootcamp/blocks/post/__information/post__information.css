@@ -1,0 +1,6 @@
+.post__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 30px 31px 21px;
+}

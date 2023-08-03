@@ -1,0 +1,21 @@
+.profile__add-post-button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 33px;
+}
+
+@media screen and (max-width: 640px) {
+    .profile__add-post-button {
+        margin-top: 36px;
+        width: 282px;
+        font-size: 25px;
+    }
+}
+
+.profile__add-post-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

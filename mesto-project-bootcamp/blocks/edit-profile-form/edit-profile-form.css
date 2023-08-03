@@ -1,0 +1,9 @@
+.edit-profile-form {
+    padding: 34px 36px 0;
+}
+
+@media screen and (max-width: 640px) {
+    .edit-profile-form {
+        padding: 25px 22px 0;
+    }
+}

@@ -1,0 +1,18 @@
+.post__like-button {
+    background-image: url(../../../images/heart.svg);
+    width: 22px;
+    height: 19px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+}
+
+.post__like-button:hover {
+    background-image: url(../../../images/heart_hover.svg);
+    cursor: pointer;
+}
+
+.post__like-button:active {
+    background-image: url(../../../images/heart_active.svg);
+    cursor: pointer;
+}

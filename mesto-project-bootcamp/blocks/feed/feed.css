@@ -1,0 +1,24 @@
+.feed {
+    display: grid;
+    grid-template-columns: repeat(3, 282px);
+    grid-template-rows: repeat(auto-fit, 361px);
+    row-gap: 20px;
+    column-gap: 17px;
+    justify-content: center;
+    padding-top: 47px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px) {
+    .feed {
+        grid-template-columns: repeat(2, 282px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .feed {
+        grid-template-columns: repeat(1, 282px);
+    }
+}
