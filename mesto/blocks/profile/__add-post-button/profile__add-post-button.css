@@ -1,10 +1,14 @@
 .profile__add-post-button {
-    width: 150px;
-    height: 50px;
+    background-image: url(../../../images/add-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: transparent;
     border: 2px solid #FFF;
+    width: 150px;
+    height: 50px;
     color: #FFF;
     font-size: 33px;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 640px) {

@@ -5,14 +5,9 @@
     background-color: transparent;
     border: 0px;
     padding: 0;
+    cursor: pointer;
 }
 
 .post__like-button:hover {
-    background-image: url(../../../images/heart_hover.svg);
-    cursor: pointer;
-}
-
-.post__like-button:active {
-    background-image: url(../../../images/heart_active.svg);
-    cursor: pointer;
+    opacity: 50%;
 }

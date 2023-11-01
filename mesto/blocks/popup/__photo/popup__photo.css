@@ -1,0 +1,12 @@
+.popup__photo {
+    display: block;
+    object-fit: contain;
+    max-height: calc(100vh - 90px*2);
+    max-width: calc(100vw - 80px*2);
+}
+
+@media screen and (max-width: 640px) {
+    .popup__photo {
+        max-width: calc(100vw - 40px*2);
+    }
+}

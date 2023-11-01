@@ -1,0 +1,7 @@
+.post__like-button_is-liked {
+    background-image: url(../../../../images/heart_active.svg);
+}
+
+.post__like-button_is-liked:hover {
+    background-image: url(../../../../images/heart_active.svg);
+}

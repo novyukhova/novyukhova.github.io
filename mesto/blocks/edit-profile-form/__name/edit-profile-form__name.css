@@ -1,9 +1,0 @@
-.edit-profile-form__name {
-    margin-top: 54px;
-}
-
-@media screen and (max-width: 640px) {
-    .edit-profile-form__name {
-        margin-top: 75px;
-    }
-}

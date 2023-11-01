@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/index.css">
-    <title>Mesto</title>
+    <title lang="En">Mesto</title>
 </head>
 
 <body>
     <div class="page">
         <header class="header">
-            <img class="logo" src="images/logo-mesto.svg" alt="Место Россия">
+            <img class="header__logo" src="images/logo-mesto.svg" alt="Место Россия">
         </header>
 
         <main class="content">
@@ -20,80 +20,69 @@
             <section class="profile">
                 <img class="profile__avatar" src="images/avatar.jpg" alt="Жак-Ив Кусто">
                 <div class="profile__info">
-                    <p class="profile__name">Жак-Ив Кусто<button class="profile__edit-button"></button></p>
-                    <p class="profile__about">Исследователь океана</p>
-                </div>
-                <button class="profile__add-post-button">＋</button>
-            </section>н
-            
-            <section class="feed">
-                <div class="post">
-                    <img class="post__photo" src="images/karachaevsk.jpg" alt="Карачаевск">
-                    <div class="post__information">
-                        <p class="post__name">Карачаевск</p>
-                        <button class="post__like-button"></button>
+                    <div class="profile__name-area">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <button aria-label="Изменить профиль" type="button" class="profile__edit-button"></button>
                     </div>
+                    <p class="profile__about">Исследователь океана и воды</p>
                 </div>
-
-                <div class="post">
-                    <img class="post__photo" src="images/elbrus.jpg" alt="Гора Эльбрус">
-                    <div class="post__information">
-                        <p class="post__name">Гора Эльбрус</p>
-                        <button class="post__like-button"></button>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="post__photo" src="images/dombay.jpg" alt="Домбай">
-                    <div class="post__information">
-                        <p class="post__name">Домбай</p>
-                        <button class="post__like-button"></button>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="post__photo" src="images/elbrus.jpg" alt="Гора Эльбрус">
-                    <div class="post__information">
-                        <p class="post__name">Гора Эльбрус</p>
-                        <button class="post__like-button"></button>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="post__photo" src="images/dombay.jpg" alt="Домбай">
-                    <div class="post__information">
-                        <p class="post__name">Домбай</p>
-                        <button class="post__like-button"></button>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="post__photo" src="images/karachaevsk.jpg" alt="Карачаево-Черкесия">
-                    <div class="post__information">
-                        <p class="post__name">Карачаево-Черкесия</p>
-                        <button class="post__like-button"></button>
-                    </div>
-                </div>
+                <button aria-label="Добавить пост" type="button" class="profile__add-post-button"></button>
             </section>
 
-            <footer class="footer">
-                <p class="footer__copyright">© 2023. Новьюхова Надежда</p>
-            </footer>
-
+            <section class="feed">
+            </section>
         </main>
 
-        <section class="popup">
+        <footer class="footer">
+            <p class="footer__copyright">© 2023. Новьюхова Надежда</p>
+        </footer>
+
+        <section class="popup" id="edit-profile-popup">
             <div class="popup__container">
-                <button type="" class="popup__close-button"></button>
-                <form action="" class="edit-profile-form">
-                    <p class="popup__header">Редактировать профиль</p>
-                    <input type="text" name="name" id="name" value="Жак-Ив Кусто" class="edit-profile-form__input edit-profile-form__name">
-                    <input type="text" name="about" id="about" value="Исследователь океана" class="edit-profile-form__input edit-profile-form__about">
-                    <button type="submit" class="edit-profile-form__submit-button">Сохранить</button>
+                <button aria-label="Закрыть поп-ап" type="button" class="popup__close-button"></button>
+                <form name="edit-profile" action="" class="form">
+                    <h2 class="popup__header">Редактировать профиль</h2>
+                    <input type="text" name="profile-name" id="profile-name" placeholder="Имя"
+                        class="form__input form__input_type_name">
+                    <input type="text" name="profile-about" id="profile-about" placeholder="О себе"
+                        class="form__input form__input_type_about">
+                    <button aria-label="Отправить форму" type="submit" class="form__submit-button">Сохранить</button>
                 </form>
             </div>
         </section>
+
+        <section class="popup" id="add-post-popup">
+            <div class="popup__container">
+                <button aria-label="Закрыть поп-ап" type="button" class="popup__close-button"></button>
+                <form name="add-post" action="" class="form">
+                    <h2 class="popup__header">Новое место</h2>
+                    <input type="text" name="post-name" id="post-name" placeholder="Название"
+                        class="form__input form__input_type_name">
+                    <input type="text" name="link" id="post-link" placeholder="Ссылка на картинку"
+                        class="form__input form__input_type_about">
+                    <button aria-label="Создать" type="submit" class="form__submit-button">Создать</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup" id="view-photo-popup">
+            <div class="popup__container popup__container_is-photo">
+                <button aria-label="Закрыть поп-ап" type="button" class="popup__close-button"></button>
+                <img src="images/karachaevsk.jpg" alt="" class="popup__photo">
+                <h2 class="popup__photo-name"></h2>
+            </div>
+        </section>
     </div>
+    <template id="post-template">
+        <article class="post">
+            <button aria-label="Удалить" type="button" class="post__delete-button"></button>
+            <img class="post__photo" src="" alt="">
+            <div class="post__information">
+                <h2 class="post__name"></h2>
+                <button aria-label="Нравится" type="button" class="post__like-button"></button>
+            </div>
+        </article>
+    </template>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

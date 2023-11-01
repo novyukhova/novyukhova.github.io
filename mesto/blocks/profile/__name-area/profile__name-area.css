@@ -1,0 +1,6 @@
+.profile__name-area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-right: -28px;
+}
